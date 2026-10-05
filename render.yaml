@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: plansurf-service
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_OWNER
+        value: beawart
+      - key: GITHUB_REPO
+        value: plansurf-data
+      - key: GITHUB_BRANCH
+        value: main
+      - key: SESSION_SECRET
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://beawart.github.io
