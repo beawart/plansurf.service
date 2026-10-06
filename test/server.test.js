@@ -95,7 +95,7 @@ test('DailySpark and Investment store data in separate app files', async () => {
 
   await withServer(mockedGitHub, async (baseUrl) => {
     for (const [app, password, marker, expectedFile] of [
-      ['dailyspark', 'spark-pass', 'plansurf-dailyspark', 'plansurf.dailyspark-data.json'],
+      ['dailyspark', 'spark-pass', 'plansurf-dailyspark', 'plansurf.daily-spark-data.json'],
       ['investment', 'investment-pass', 'plansurf-property', 'plansurf.property-data.json']
     ]) {
       const { response, body } = await signIn(baseUrl, app, password);

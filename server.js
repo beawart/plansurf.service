@@ -19,7 +19,7 @@ const APPS = Object.freeze({
   dailyspark: {
     passwordEnv: 'APP_PASSWORD_DAILYSPARK',
     pathEnv: 'GITHUB_PATH_DAILYSPARK',
-    defaultPath: 'plansurf.dailyspark-data.json',
+    defaultPath: 'plansurf.daily-spark-data.json',
     marker: 'plansurf-dailyspark'
   },
   investment: {

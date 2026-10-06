@@ -7,7 +7,7 @@ Shared API for PlanSurf's static HTML apps. The API runs as one Render web servi
 | App key | Login route | Data route | Default private-repo file |
 | --- | --- | --- | --- |
 | `budget` | `/api/budget/login` | `/api/budget/data` | `plansurf.budget-data.json` |
-| `dailyspark` | `/api/dailyspark/login` | `/api/dailyspark/data` | `plansurf.dailyspark-data.json` |
+| `dailyspark` | `/api/dailyspark/login` | `/api/dailyspark/data` | `plansurf.daily-spark-data.json` |
 | `investment` | `/api/investment/login` | `/api/investment/data` | `plansurf.property-data.json` |
 
 App routes are not hard-coded: use any lowercase app key containing letters, numbers, or hyphens (up to 40 characters), such as `travel`. Its default private-repo file is `plansurf.<app>-data.json`, so `travel` maps to `plansurf.travel-data.json`. No service code or redeploy is needed for a new key. Data routes accept and return JSON objects; Budget additionally validates its existing `plansurf-budget` format.
